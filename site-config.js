@@ -20,11 +20,40 @@ window.SITE_CONFIG = {
     // Example: { name: "LinkedIn", url: "https://www.linkedin.com/in/your-name/" }
     socialLinks: [],
 
-    // Replace these after creating your GitHub repository.
-    repositoryUrl: "",
-    configEditUrl: "",
-    cvFolderEditUrl: "",
+    repositoryUrl: "https://github.com/winniezkatty/ZHANG-KAITONG",
+    sourceEditUrl: "https://github.com/winniezkatty/ZHANG-KAITONG/edit/main/index.html",
+    configEditUrl: "https://github.com/winniezkatty/ZHANG-KAITONG/edit/main/site-config.js",
+    cvFolderEditUrl: "https://github.com/winniezkatty/ZHANG-KAITONG/tree/main/assets/cv",
   },
+
+  // Add a public HTTPS URL when you want visitors to open evidence.
+  // Leave url empty to show the credential without exposing a document.
+  credentials: [
+    {
+      type: { zh: "语言证书", en: "Language credential", pt: "Certificação linguística" },
+      title: { zh: "葡萄牙语", en: "Portuguese", pt: "Português" },
+      detail: { zh: "Celpe-Bras 中高级 · CAPLE B2", en: "Celpe-Bras Intermediário Superior · CAPLE B2", pt: "Celpe-Bras Intermediário Superior · CAPLE B2" },
+      url: "",
+    },
+    {
+      type: { zh: "语言证书", en: "Language credential", pt: "Certificação linguística" },
+      title: { zh: "英语与日语", en: "English & Japanese", pt: "Inglês e Japonês" },
+      detail: { zh: "CET-6 · IELTS 6.5 · JLPT N2", en: "CET-6 · IELTS 6.5 · JLPT N2", pt: "CET-6 · IELTS 6,5 · JLPT N2" },
+      url: "",
+    },
+    {
+      type: { zh: "学术荣誉", en: "Academic recognition", pt: "Reconhecimento acadêmico" },
+      title: { zh: "澳门大学院长荣誉榜", en: "University of Macau Dean's Honour List", pt: "Lista de Honra do Reitor da Universidade de Macau" },
+      detail: { zh: "三次入选", en: "Awarded three times", pt: "Reconhecimento recebido três vezes" },
+      url: "",
+    },
+    {
+      type: { zh: "奖学金", en: "Scholarship", pt: "Bolsa" },
+      title: { zh: "澳门基金会海外交流奖学金", en: "Macao Foundation Overseas Exchange Scholarship", pt: "Bolsa de Intercâmbio da Fundação Macau" },
+      detail: { zh: "支持圣保罗大学交换学习", en: "Supported the exchange year at the University of São Paulo", pt: "Apoio ao intercâmbio na Universidade de São Paulo" },
+      url: "",
+    },
+  ],
 
   cvFiles: {
     zh: "assets/cv/Kaitong-Zhang-CV-ZH.pdf",

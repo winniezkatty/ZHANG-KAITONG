@@ -19,6 +19,16 @@
 
 链接可以指向 Notion、Google Drive、OneDrive、Behance、YouTube、Vimeo、Bilibili、小红书、GitHub、公开 PDF 或独立案例页面。
 
+## 更新证书与证明链接
+
+打开 site-config.js，找到 credentials。每项证书或荣誉都有独立的 url 字段：
+
+- 保持 `url: ""` 时，网站只显示证书信息，不会打开空链接。
+- 填入公开 HTTPS 地址后，网站会显示“查看证明”。
+- 可链接到公开 PDF、Google Drive、OneDrive 或证书验证页面。
+
+请避免上传包含身份证号、住址或其他不必要个人信息的证明文件。
+
 ## 可选社媒链接
 
 是否展示社媒由你决定。打开 site-config.js，在 owner.socialLinks 数组中添加公开账号，例如：
@@ -39,7 +49,7 @@
 
 ## 设置本人维护按钮
 
-创建 GitHub 仓库后，在 site-config.js 的 owner 部分填写 repositoryUrl、configEditUrl 和 cvFolderEditUrl。随后用网站网址加上 ?owner=1 打开站长维护区；正常访客看不到该区。
+页脚的“本人维护”会用 `?owner=1` 打开维护区。维护区提供三个入口：编辑页面内容、更新作品/证书链接、替换 PDF 简历。
 
 GitHub 会要求登录，并只允许具有仓库写入权限的账号提交更改。不要把密码、访问令牌或私人密钥写入网站文件。
 
